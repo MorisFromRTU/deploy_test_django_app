@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
+# render-build.sh
+
+# Установка зависимостей
 pip install -r requirements.txt
-python3 manage.py makemigrations
-python3 manage.py migrate
-python3 manage.py collectstatic --noinput
+
+# Применение миграций
+python manage.py migrate
+
+# Сборка статики
+python manage.py collectstatic --noinput
