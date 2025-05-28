@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ff&0q=_^rt9zw&+_%5f-ih9+!qbf%84$r^4qa-t@0ercej8gnv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [os.getenv('RENDER_EXTERNAL_HOSTNAME')] if os.getenv('RENDER_EXTERNAL_HOSTNAME') else []
+ALLOWED_HOSTS = ['https://django-app-fb97.onrender.com']
 
 
 # Application definition
